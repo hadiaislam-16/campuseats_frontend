@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'screens/role_selection_screen.dart';
 import 'screens/splash_screen.dart';
 import 'theme/app_theme.dart';
 
@@ -16,9 +17,8 @@ class CampusEatsApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Campus Eats',
       theme: AppTheme.light,
-
       home: SplashScreen(
-        nextScreen: const Placeholder(),
+        nextScreen: const RoleSelectionScreen(),
       ),
     );
   }
